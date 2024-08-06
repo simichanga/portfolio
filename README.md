@@ -65,10 +65,9 @@ To get a local copy up and running, follow these simple steps:
 ### Building for production
 
 To build the project for production, run:
-
-    ```sh
-    npm run build
-    ```
+```sh
+npm run build
+```
 
 This will create an optimized build of your application in the .next directory.
 
@@ -77,14 +76,14 @@ This will create an optimized build of your application in the .next directory.
 You can deploy this application to various hosting platforms, such as Vercel, Netlify, or any server that supports Node.js. For Vercel, follow these steps:
 
 1. Install Vercel CLI if you haven't already:
-    ```sh
-    npm install -g vercel
-    ```
+```sh
+npm install -g vercel
+```
 
 2. Deploy your project
-    ```sh
-    vercel
-    ```
+```sh
+vercel
+```
 
 Follow the prompts to link your project to a Vercel account and configure the deployment.
 
@@ -102,9 +101,9 @@ Use static generation with getStaticProps and getStaticPaths when possible.
 
 #### 📬 Contact
 
-    Email: siminischi1234@gmail.com
-    LinkedIn: https://www.linkedin.com/in/siminischiasebastian/
-    GitHub: (https://github.com/simichanga)
+Email: siminischi1234@gmail.com
+LinkedIn: https://www.linkedin.com/in/siminischiasebastian
+GitHub: https://github.com/simichanga
 
 Thank you for checking out my portfolio! 🚀
 
