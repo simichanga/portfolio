@@ -102,8 +102,14 @@ Use static generation with getStaticProps and getStaticPaths when possible.
 ### 📬 Contact
 
 Email: siminischi1234@gmail.com
+
+
 LinkedIn: https://www.linkedin.com/in/siminischiasebastian
+
+
 GitHub: https://github.com/simichanga
+
+
 
 Thank you for checking out my portfolio! 🚀
 
