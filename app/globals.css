@@ -2,32 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 210 16% 96%; /* Light blue-gray */
+    --foreground: 210 22% 22%; /* Dark blue-gray */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 22% 22%; /* Dark blue-gray */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 22% 22%; /* Dark blue-gray */
+
+    --primary: 200 100% 40%; /* Vibrant blue */
+    --primary-foreground: 0 0% 98%; /* Almost white */
+
+    --secondary: 290 70% 36%; /* Vibrant purple */
+    --secondary-foreground: 0 0% 98%; /* Almost white */
+
+    --muted: 210 16% 90%; /* Light blue-gray */
+    --muted-foreground: 210 22% 22%; /* Dark blue-gray */
+
+    --accent: 150 100% 35%; /* Vibrant green */
+    --accent-foreground: 0 0% 98%; /* Almost white */
+
+    --destructive: 0 84.2% 60.2%; /* Bright red */
+    --destructive-foreground: 0 0% 98%; /* Almost white */
+
+    --border: 210 16% 80%; /* Light blue-gray */
+    --input: 210 16% 80%; /* Light blue-gray */
+    --ring: 200 100% 40%; /* Vibrant blue */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 22% 22%; /* Dark blue-gray */
+    --foreground: 210 16% 96%; /* Light blue-gray */
+
+    --card: 210 22% 22%; /* Dark blue-gray */
+    --card-foreground: 210 16% 96%; /* Light blue-gray */
+
+    --popover: 210 22% 22%; /* Dark blue-gray */
+    --popover-foreground: 210 16% 96%; /* Light blue-gray */
+
+    --primary: 200 100% 40%; /* Vibrant blue */
+    --primary-foreground: 0 0% 98%; /* Almost white */
+
+    --secondary: 290 70% 36%; /* Vibrant purple */
+    --secondary-foreground: 0 0% 98%; /* Almost white */
+
+    --muted: 210 22% 28%; /* Dark blue-gray */
+    --muted-foreground: 210 16% 96%; /* Light blue-gray */
+
+    --accent: 150 100% 35%; /* Vibrant green */
+    --accent-foreground: 0 0% 98%; /* Almost white */
+
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 0 0% 98%; /* Almost white */
+
+    --border: 210 22% 28%; /* Dark blue-gray */
+    --input: 210 22% 28%; /* Dark blue-gray */
+    --ring: 200 100% 40%; /* Vibrant blue */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
