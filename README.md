@@ -87,11 +87,11 @@ vercel
 
 Follow the prompts to link your project to a Vercel account and configure the deployment.
 
-#### 💡 Usage
+### 💡 Usage
 
 Feel free to explore the project, customize components, and use it as a template for your own portfolio!
 
-#### 🚀 Optimizing Performance
+### 🚀 Optimizing Performance
 
 For best performance, ensure you are following Next.js optimization guidelines:
 
@@ -99,7 +99,7 @@ Use static generation with getStaticProps and getStaticPaths when possible.
     Optimize images using the next/image component.
     Use dynamic imports for components that are not required on the initial render.
 
-#### 📬 Contact
+### 📬 Contact
 
 Email: siminischi1234@gmail.com
 LinkedIn: https://www.linkedin.com/in/siminischiasebastian
